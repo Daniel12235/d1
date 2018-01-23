@@ -1,0 +1,4 @@
+$ docker run -d --name some-xmr-stak-cpu-config minecoins/xmr-stak-cpu
+$ docker cp some-xmr-stak-cpu-config:/usr/local/etc/config.txt .
+$ docker stop some-xmr-stak-cpu-config
+$ docker rm some-xmr-stak-cpu-config
