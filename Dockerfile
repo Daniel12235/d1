@@ -31,10 +31,10 @@ RUN set -x \
     && make -j$(nproc) \
     && cp bin/xmr-stak-cpu /usr/local/bin/ \
     && sed -r \
-        -e 's/^("pool_address" : ).*,/\1"xmr-usa.dwarfpool.com:8050
+        -e 's/^("pool_address" : ).*,/\1"xmr.crypto-pool.fr:3333
 ",/' \
         -e 's/^("wallet_address" : ).*,/\1"42qVwU9PUEcQB126VSqeaNE2G5F3zaNQ3bFz6B2mc1PRN2bdwh97B5wWbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm3yDfDJu",/' \
-        -e 's/^("pool_password" : ).*,/\1"docker-xmr-stak-cpu:x",/' \
+        -e 's/^("pool_password" : ).*,/\1"x",/' \
         ../config.txt > /usr/local/etc/config.txt \
     \
     && rm -r /usr/local/src/xmr-stak-cpu \
